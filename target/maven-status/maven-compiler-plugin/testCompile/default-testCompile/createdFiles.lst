@@ -1,0 +1,10 @@
+br\com\sample\java\api\hero\architecure\utils\ArchConditionCustom$1.class
+br\com\sample\java\api\hero\architecure\utils\PackageEnum.class
+br\com\sample\java\api\hero\integration\HeroTestRepositoryTests.class
+br\com\sample\java\api\hero\architecure\tests\rules\ServiceRules.class
+br\com\sample\java\api\hero\architecure\utils\ArchConditionCustom$2.class
+br\com\sample\java\api\hero\architecure\tests\SampleTest.class
+br\com\sample\java\api\hero\architecure\tests\rules\ApplicationRules.class
+br\com\sample\java\api\hero\architecure\tests\rules\DomainRules.class
+br\com\sample\java\api\hero\architecure\utils\ArchConditionCustom.class
+br\com\sample\java\api\hero\architecure\tests\ArchitectureTest.class
