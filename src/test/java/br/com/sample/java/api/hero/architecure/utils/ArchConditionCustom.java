@@ -1,13 +1,12 @@
 package br.com.sample.java.api.hero.architecure.utils;
 
+import java.util.Set;
+
 import com.tngtech.archunit.core.domain.JavaClass;
 import com.tngtech.archunit.core.domain.JavaField;
 import com.tngtech.archunit.core.domain.JavaMethod;
-import com.tngtech.archunit.core.domain.JavaModifier;
 import com.tngtech.archunit.lang.ArchCondition;
 import com.tngtech.archunit.lang.ConditionEvents;
-
-import java.util.Set;
 
 public class ArchConditionCustom {
 

@@ -2,7 +2,7 @@ package br.com.sample.java.api.hero.architecure.utils;
 
 public enum PackageEnum {
 
-    BASE_PACKAGE("br.com.rossalli.sample.java.api.hero"),
+    BASE_PACKAGE("br.com.sample.java.api.hero"),
     CONTROLLER_PACKAGE(".controller"),
     DOMAIN_PACKAGE(".domain"),
     SERVICE_PACKAGE(".service"),
