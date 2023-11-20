@@ -1,15 +1,14 @@
 package br.com.sample.java.api.hero.architecure.tests.rules;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.lang.syntax.ArchRuleDefinition;
 
 import br.com.sample.java.api.hero.architecure.utils.PackageEnum;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
 public class DomainRules {
 

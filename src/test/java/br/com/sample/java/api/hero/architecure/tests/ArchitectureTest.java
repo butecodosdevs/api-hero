@@ -2,8 +2,8 @@ package br.com.sample.java.api.hero.architecure.tests;
 
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
-import com.tngtech.archunit.junit.ArchRules;
 import com.tngtech.archunit.junit.ArchTest;
+import com.tngtech.archunit.junit.ArchTests;
 import com.tngtech.archunit.lang.ArchRule;
 import com.tngtech.archunit.library.GeneralCodingRules;
 import com.tngtech.archunit.library.dependencies.SliceRule;
@@ -13,7 +13,7 @@ import br.com.sample.java.api.hero.architecure.tests.rules.ApplicationRules;
 import br.com.sample.java.api.hero.architecure.tests.rules.DomainRules;
 import br.com.sample.java.api.hero.architecure.tests.rules.ServiceRules;
 
-@AnalyzeClasses(packages = "br.com.rossalli.sample.java.api.hero", importOptions = {ImportOption.DoNotIncludeTests.class})
+@AnalyzeClasses(packages = "br.com.sample.java.api.hero", importOptions = {ImportOption.DoNotIncludeTests.class})
 public class ArchitectureTest {
 
     @ArchTest
@@ -25,14 +25,15 @@ public class ArchitectureTest {
             .matching("..(*)")
             .should()
             .beFreeOfCycles();
+      
 
     @ArchTest
-    static ArchRules applicationRules = ArchRules.in(ApplicationRules.class);
+    static ArchTests applicationRules = ArchTests.in(ApplicationRules.class);
 
     @ArchTest
-    static ArchRules serviceRules = ArchRules.in(ServiceRules.class);
+    static ArchTests serviceRules = ArchTests.in(ServiceRules.class);
 
     @ArchTest
-    static ArchRules domainRules = ArchRules.in(DomainRules.class);
+    static ArchTests domainRules = ArchTests.in(DomainRules.class);
 
 }

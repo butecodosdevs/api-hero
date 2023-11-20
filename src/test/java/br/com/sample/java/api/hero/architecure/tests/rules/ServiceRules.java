@@ -46,12 +46,12 @@ public class ServiceRules {
     @ArchTest
     static ArchRule dto_in_should_be_to_entity_method =
             ArchRuleDefinition.classes().that()
-                    .haveSimpleNameContaining("DTOIn")
+                    .haveSimpleNameContaining("DTO")
                     .should(ArchConditionCustom.containspecificmethod("toEntity"));
     @ArchTest
     static ArchRule dto_out_should_be_from_dto_method =
             ArchRuleDefinition.classes().that()
-                    .haveSimpleNameContaining("DTOOut")
+                    .haveSimpleNameContaining("DTO")
                     .should(ArchConditionCustom.containspecificmethod("fromEntity"));
 
     @ArchTest

@@ -7,7 +7,11 @@ import br.com.sample.java.api.hero.service.dto.HeroDTO;
 
 public class HeroResponse implements Serializable {
 
-    private Long id;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7804146947218718153L;
+	private Long id;
     private String name;
     private String codename;
     private Universe universe;

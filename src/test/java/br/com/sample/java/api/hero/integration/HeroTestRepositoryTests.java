@@ -9,8 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.List;
 import java.util.Optional;
 
-import javax.validation.ConstraintViolationException;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -28,6 +26,7 @@ import br.com.sample.java.api.hero.common.constant.Universe;
 import br.com.sample.java.api.hero.domain.entity.Hero;
 import br.com.sample.java.api.hero.domain.repository.HeroRepository;
 import br.com.sample.java.api.hero.exceptions.NotFoundException;
+import jakarta.validation.ConstraintViolationException;
 
 @Testcontainers
 @SpringBootTest

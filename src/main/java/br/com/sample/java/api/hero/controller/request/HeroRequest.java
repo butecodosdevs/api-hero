@@ -5,9 +5,14 @@ import java.io.Serializable;
 import br.com.sample.java.api.hero.common.constant.Universe;
 import br.com.sample.java.api.hero.service.dto.HeroDTO;
 
-public class HeroRequest  {
+public class HeroRequest implements Serializable {
 
-    private String name;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4067007085450034480L;
+	
+	private String name;
     private String codename;
     private Universe universe;
 
